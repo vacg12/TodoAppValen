@@ -1,0 +1,165 @@
+*,
+::before,
+::after {
+	box-sizing: border-box;
+	border-width: 0;
+	border-style: solid;
+	border-color: #e5e7eb;
+}
+/* Quitar margen */
+body,
+h2,
+h1,
+p {
+	margin: 0;
+}
+
+body {
+	padding-top: 4rem;
+	font-family: "Inter", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	font-variation-settings: "slnt" 0;
+	height: 100vh;
+}
+/* Nav */
+#nav {
+	background-color: #fdba74;
+	padding: 0 1rem;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+#nav-container {
+	max-width: 70rem;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 4rem;
+}
+
+#nav-tittle {
+	font-size: 1.5rem;
+	color: white;
+}
+
+#nav-button {
+	padding: 0.25rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 0.5rem;
+	background-color: transparent;
+	border: 2px solid white;
+	color: white;
+	transition: all 0.12s ease-in-out;
+}
+
+/* Invertir color */
+#nav-button:active {
+	background-color: white;
+	color: #fdba74;
+}
+
+#nav-button > svg {
+	width: 2rem;
+	height: 2rem;
+}
+
+#nav-links-container {
+	display: none;
+	gap: 1rem;
+}
+.link {
+	color: white;
+	text-decoration: none;
+}
+
+/* Animacion subrayado */
+.link:hover {
+	text-decoration: underline;
+}
+
+/* Centrar contenido */
+#main-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	padding: 0 1rem;
+	max-width: 70rem;
+	margin: 0 auto;
+	gap: 2rem;
+}
+
+#main-title {
+	font-size: 3rem;
+}
+
+/* Poner color solo a la palabra App */
+#main-title > span {
+	color: #fdba74;
+}
+
+/* Separar descripcion del link comienza */
+#main-descrip-container {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+/* Justificar el texto */
+#descrip-text {
+	text-align: justify;
+}
+
+/* Hacer parecer el link comienza como boton */
+#main-button {
+	background-color: #fdba74;
+	padding: 0.5rem 1rem;
+	border-radius: 0.5rem;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+	transition: all 0.175s ease-in-out;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+#main-button:hover {
+	background-color: #e1ba8ece;
+}
+
+@media (min-width: 768px) {
+	#nav-button {
+		display: none;
+	}
+	#nav-links-container {
+		display: flex;
+	}
+
+	#main-container {
+		flex-direction: row;
+	}
+
+	#main-title {
+		width: 50%;
+		font-size: 5rem;
+	}
+
+	#main-descrip-container {
+		width: 50%;
+	}
+}
+
+/* Tamano para laptop */
+@media (min-width: 1024px){
+	#main-title {
+		font-size: 7rem;
+	}
+}

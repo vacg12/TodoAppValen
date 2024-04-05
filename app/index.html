@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=, initial-scale=1.0" />
+		<title>To-Do List</title>
+		<link rel="stylesheet" href="index.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+			rel="stylesheet" />
+	</head>
+	<body>
+		<!-- Div principal -->
+		<div id="app-container">
+
+			<!-- Div title -->
+			<div id="title-app">
+				<h1 id="title">TODO APP</h1>
+			</div>
+
+			  <!-- div formulario -->
+			<div id="container-all">
+				<div id="formulario">
+					<form id="form">
+						<input type="text" id="input-form" placeholder="Introduce una tarea...">
+						<button id="buttonapp"><svg id="boton-form" xmlns="http://www.w3.org/2000/svg"
+							 fill="none" 
+							 viewBox="0 0 24 24" 
+							 stroke-width="1.5" 
+							 stroke="currentColor" class="w-6 h-6">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+						  </svg>
+						  </button>
+					</form>
+					<p id="form-text"> A task must be provided... </p>
+				</div>
+	
+				<!-- Div lista -->
+				<div id="list-container">
+					<ul id="ul-list">
+						<div class="texto">
+							<button class="x" id="botonx-1"><svg id="botonx1" xmlns="http://www.w3.org/2000/svg" 
+								fill="none" viewBox="0 0 24 24"
+								 stroke-width="1.5" 
+								 stroke="currentColor" 
+								 class="w-6 h-6">
+								<path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+							  </svg>
+							  </button> 
+							 <li class="texto-lista" id="lista1"> Hacer tarea de programacion. </li> 
+							<button class="hecho" id="boton2"><svg id="svg-hecho" xmlns="http://www.w3.org/2000/svg" 
+								fill="none" 
+								viewBox="0 0 24 24"
+								 stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+								<path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+							  </svg>
+							  </button>
+						</div>
+						<div class="texto">
+							<button class="x"><svg id="svg-x" xmlns="http://www.w3.org/2000/svg" 
+								fill="none" viewBox="0 0 24 24"
+								 stroke-width="1.5" 
+								 stroke="currentColor" 
+								 class="w-6 h-6">
+								<path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+							  </svg></button> 
+							 <li class="texto-lista"> No morir en el intento. </li> 
+							<button class="hecho" id="botones-claros"><svg id="svg-hecho" xmlns="http://www.w3.org/2000/svg" 
+								fill="none" 
+								viewBox="0 0 24 24"
+								 stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+								<path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+							  </svg></button>
+						</div>
+						<div class="texto">
+							<button class="x"><svg id="svg-x" xmlns="http://www.w3.org/2000/svg" 
+								fill="none" viewBox="0 0 24 24"
+								 stroke-width="1.5" 
+								 stroke="currentColor" 
+								 class="w-6 h-6">
+								<path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+							  </svg></button> 
+							 <li class="texto-lista"> Tener un descanso. </li> 
+							<button class="hecho" id="botones-claros"><svg id="svg-hecho" xmlns="http://www.w3.org/2000/svg" 
+								fill="none" 
+								viewBox="0 0 24 24"
+								 stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+								<path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+							  </svg></button>
+						</div>
+						<div class="texto">
+							<button class="x" id="botonx-1"><svg id="botonx1" xmlns="http://www.w3.org/2000/svg" 
+								fill="none" viewBox="0 0 24 24"
+								 stroke-width="1.5" 
+								 stroke="currentColor" 
+								 class="w-6 h-6">
+								<path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+							  </svg></button> 
+							 <li class="texto-lista" id="lista1"> Comprar snacks. Ir al cine. Pasar por una bomba. Ir a comer con amigos. Comprar comida para mascotas. Ir a casa.   </li> 
+							<button class="hecho" id="boton2"><svg id="svg-hecho" xmlns="http://www.w3.org/2000/svg" 
+								fill="none" 
+								viewBox="0 0 24 24"
+								 stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+								<path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+							  </svg></button>
+						</div>
+						<div class="texto">
+							<button class="x"><svg id="svg-x" xmlns="http://www.w3.org/2000/svg" 
+								fill="none" viewBox="0 0 24 24"
+								 stroke-width="1.5" 
+								 stroke="currentColor" 
+								 class="w-6 h-6">
+								<path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+							  </svg></button> 
+							 <li class="texto-lista"> Ver una serie. </li> 
+							<button class="hecho" id="botones-claros"><svg id="svg-hecho" xmlns="http://www.w3.org/2000/svg" 
+								fill="none" 
+								viewBox="0 0 24 24"
+								 stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+								<path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+							  </svg></button>
+						</div>
+					</ul>
+				</div>
+	
+				<!-- Div contadores -->
+				 <section class="counters">
+					<div class="container-counters">
+						<div class="counter1"> Total: 5 </div> 
+						<div class="counter2"> Completed: 2 </div> 
+						<div class="counter3"> Uncompleted: 3 </div> 
+					</div>
+				 </section>
+			</div>
+			
+
+		</div>
+	</body>
+</html>
