@@ -64,7 +64,10 @@ inputForm.addEventListener('input', e =>{
 form.addEventListener('submit', e => {
     e.preventDefault();
   // Verificar si las validaciones son verdaderas
-  if (!inputFormValidation) return;
+  if (!inputFormValidation) {
+    alert('Recuerde no dejar un espacio al final al terminar de escribir.'); 
+    return;
+  }
   // Crear contacto
   const newTask = {
     id: crypto.randomUUID(),
