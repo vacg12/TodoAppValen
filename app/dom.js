@@ -17,7 +17,6 @@ const validateInput = (input, validation) =>{
         btnForm.disabled = false;
       } else {
         btnForm.disabled = true;
-	alert('Recuerde no dejar un espacio al final al terminar de escribir.');
       }
 }
 
