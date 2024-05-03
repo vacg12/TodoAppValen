@@ -99,7 +99,7 @@ Body {
 /* Lista contenedor */
 #list-container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     margin: 0;
     font-size: smaller;
     overflow-y: scroll;
@@ -125,8 +125,12 @@ Body {
  .texto{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     height: auto;
     border: 1px solid white;
+    word-break: break-word;
+    align-items: center;
+    gap: 0.5rem;
 }
 #botonx-1 {
     background-color: white;
@@ -148,28 +152,30 @@ Body {
     list-style-type: none;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     min-height: 3rem;
     padding-left: 0.5rem;
 }
 
          /* tachado */
-#lista1 {
-    text-decoration-line: line-through;
+.lista1 {
+    text-decoration: line-through;
 }
 
 .hecho{
-    width: 3.5rem;
+    min-width: 3.5rem;
+    height: 3.5rem;
     border-radius: 0.5rem;
     transition: all 0.12s ease-in-out;
+    background: #a3e635;
 }
 .hecho:active{
     background-color: #16a34a;
 }
          /* botones marcados en verde */
-#boton2 {
-    background-color: #bef264;
+.boton2 {
+    background-color: #fdba74;
     transition: all 0.12s ease-in-out;
 }
 #boton2:active {
@@ -178,7 +184,12 @@ Body {
 
 #svg-hecho {
     width: 1.5rem;
-    color:  #16a34a;
+    color: black;
+}
+
+#svg-x {
+    width: 1.5rem;
+    color: black;
 }
 
 #botones-claros:active {
@@ -186,7 +197,8 @@ Body {
 }
          /* botones marcados rojos */
 .x {
-    width: 3.5rem;  
+    min-width: 3.5rem;  
+    height: 3.5rem;
     border-radius: 0.5rem;
     background-color: #e11d48;
     transition: all 0.12s ease-in-out;
@@ -197,7 +209,7 @@ Body {
 
 #svg-x {
     width: 1.5rem;
-    color: white;
+    color: black;
     transition: all 0.12s ease-in-out;
 }
 #svg-x:active{
@@ -205,21 +217,21 @@ Body {
 }
 
 /* contadores */
-.counter1 {
+#counter1 {
     background: #f97316;
     border-radius: 0.2rem;
     color: white;
     padding: 0.2rem;
 }
 
-.counter2 {
+#counter2 {
     background: green;
     border-radius: 0.2rem;
     color: white;
     padding: 0.2rem;
 }
 
-.counter3 {
+#counter3 {
     background: #dc2626;
     border-radius: 0.2rem;
     color: white;
@@ -233,6 +245,11 @@ Body {
     padding: 1rem;
     font-size: 0.7rem;
     gap: 1rem;
+}
+
+.tarea-hecha {
+	color: gray;
+	text-decoration: line-through;
 }
 
 @media (min-width: 768px) {
